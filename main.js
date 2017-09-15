@@ -1,6 +1,7 @@
 const aboutBtn = document.querySelector('.about');
 const projectsBtn = document.querySelector('.projects');
 const contactBtn = document.querySelector('.contact');
+const main = document.querySelector('main');
 const home = document.getElementById("home");
 const about = document.getElementById("about");
 const projects = document.getElementById("projects");
