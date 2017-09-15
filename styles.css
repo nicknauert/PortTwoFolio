@@ -88,7 +88,6 @@ main {
   position: absolute;
   width: 80%;
   left: 10%;
-  height: 500px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -96,7 +95,6 @@ main {
   position: absolute;
   width: 80%;
   left: 10%;
-  height: 500px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -104,7 +102,7 @@ main {
   position: absolute;
   width: 80%;
   left: 10%;
-  height: 500px;
+  height: 400px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -125,6 +123,7 @@ main {
 .imgCont {
   height: 80px;
   overflow: hidden;
+  margin-bottom: 45px;
 }
 
 .cardImg {
@@ -148,6 +147,17 @@ main {
   background-color: rgba(75, 75, 75, 0.79);
 }
 
+.projectCont {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.projectCard {
+  width: 40%;
+  margin-bottom: 20px;
+}
+
 
 /*========== Active Styles ==============*/
 
@@ -155,14 +165,14 @@ main {
   transition: .4s ease;
   opacity: 0;
   z-index: -1;
-  top: 100px;
+  top: 15%;
 }
 
 .showPage {
   transition: .5s ease;
   opacity: 1;
   z-index: 1;
-  top: 70px;
+  top: 10%;
 }
 
 .hide {
