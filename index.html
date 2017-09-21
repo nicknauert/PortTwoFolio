@@ -6,7 +6,8 @@
   <title>Nick Nauert</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -21,10 +22,10 @@
       <ul>
         <li><button type="button" class="homeBtn about">ABOUT</button></li>
         <li><button type="button" class="homeBtn projects">PROJECTS</button></li>
-        <li class="liAnchor"><a href="mailto:nicknauert@gmail.com" class="homeA contact">CONTACT</a></li>
+        <!-- <li class="liAnchor"><a href="mailto:nicknauert@gmail.com" class="homeA contact">CONTACT</a></li> -->
+        <li><button type="button" class="homeBtn contact">CONTACTS</button></li>
       </ul>
     </section>
-
     <section id="about" class="hidePage">
       <div class="card">
         <div class="cardHead">
@@ -32,9 +33,10 @@
           <button type="button" id="aboutClose">X</button>
         </div>
         <div class="imgCont">
-          <img src="img/about.jpg" alt="" class="cardImg">
+          <img src="img/about.png" alt="" class="cardImg">
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>My background is in making beautiful things. Be it graphic design, photography, or video-journalism, I have been in creative environments nearly non-stop since 2007. I have a keen eye for the small details, and know that they can make or break
+          the visual impact of any product.</p>
       </div>
     </section>
     <section id="projects" class="hidePage">
@@ -75,22 +77,25 @@
         </div>
       </div>
     </section>
-
-    <!-- <section id="contact" class="hidePage">
+    <section id="contact" class="hidePage">
       <div class="card">
         <div class="cardHead">
           <h3>CONTACT</h3>
           <button type="button" id="contactClose">X</button>
         </div>
-        <form action="mailto:nicknauert@gmail.com" method="POST">
-          <input type="text" name="name" placeholder="Name">
-          <input type="email" name="email" placeholder="Email">
-          <textarea name="name" rows="7" cols="60" placeholder="Message"></textarea>
-          <button type="submit" name="submit">Send Message</button>
-        </form>
-      </div>
-    </section> -->
+        <div class="contactCont">
+          <div class="contactText">
+            <span>Email</span>
+            <p>nicknauert@gmail.com</p>
+          </div>
+          <div class="contactImgs">
+            <a href="https://github.com/nicknauert"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/nicknauert/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          </div>
 
+        </div>
+      </div>
+    </section>
   </main>
   <script src="main.js" charset="utf-8"></script>
 </body>

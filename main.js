@@ -26,11 +26,11 @@ projectsBtn.addEventListener('click', function(e){
 })
 
 contactBtn.addEventListener('click', function(e){
-  // home.classList.remove('show');
-  // home.classList.add('hide');
-  // contact.classList.remove('hidePage');
-  // contact.classList.add('showPage');
-  
+  home.classList.remove('show');
+  home.classList.add('hide');
+  contact.classList.remove('hidePage');
+  contact.classList.add('showPage');
+
 })
 
 aboutClose.addEventListener('click', function(e){
