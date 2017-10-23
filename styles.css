@@ -10,9 +10,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: rgb(0, 255, 156);
   font-family: 'Abel', sans-serif;
   font-weight: 300;
+}
+
+*::selection {
+  background-color: rgb(0, 255, 156);
 }
 
 body {}
@@ -20,9 +24,18 @@ body {}
 main {
   width: 100%;
   height: 100vh;
-  background-image: url("img/bg.jpg");
+  background: url("img/bg.png");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+}
+
+.about {
+  border-bottom-left-radius: 8px;
+}
+
+.contact {
+  border-bottom-right-radius: 8px;
 }
 
 #home {
@@ -39,24 +52,27 @@ main {
 
 #home>h1 {
   font-size: 3.5em;
+  color: white;
 }
 
 .vertLineTop {
-  border: 1px solid white;
+  border: 1px solid rgb(0, 255, 156);
   height: 20px;
 }
 
 .homePara {
   font-size: .9em;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  padding: 40px 0;
+  border-top: 2px solid rgb(0, 255, 156);
+  border-bottom: 2px solid rgb(0, 255, 156);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2em 1em;
+  color: white;
+  line-height: 1.4em;
 }
 
 .vertLineBot {
-  border: 1px solid white;
+  border: 1px solid rgb(0, 255, 156);
   height: 50px;
-  margin-bottom: 20px;
 }
 
 #home>ul {
@@ -70,12 +86,13 @@ main {
   width: 100%;
   height: 50px;
   font-size: 15px;
-  background-color: transparent;
-  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgb(0, 255, 156);
   letter-spacing: 3px;
   transition: .5s ease;
   box-shadow: none;
   margin: -1px 0;
+  color: white;
 }
 
 .liAnchor {
@@ -83,7 +100,7 @@ main {
   height: 50px;
   font-size: 15px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid rgb(0, 255, 156);
   letter-spacing: 3px;
   transition: .5s ease;
   box-shadow: none;
@@ -97,7 +114,7 @@ main {
 }
 
 .homeBtn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 156, 120, 0.3);
   letter-spacing: 4px;
   transition: .5s ease;
 }
@@ -142,6 +159,10 @@ main {
   justify-content: space-between;
 }
 
+.card p {
+  color: white;
+}
+
 .cardHead {
   display: flex;
   flex-flow: row nowrap;
@@ -163,22 +184,25 @@ main {
 
 .cardHead>h3 {
   letter-spacing: 3px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgb(0, 255, 156);
   padding-bottom: 5px;
   display: inline;
+  color: white;
 }
 
 .cardHead>button {
   float: right;
-  border: none;
+  border: 1px solid rgb(0, 255, 156);
   border-radius: 100%;
   width: 25px;
   height: 25px;
-  background-color: rgba(191, 191, 191, 0.37);
+  background-color: transparent;
+  color: white;
+  transition: .5s;
 }
 
 .cardHead>button:hover {
-  background-color: rgba(215, 211, 211, 0.37);
+  background-color: rgba(0, 255, 156, 0.14);
 }
 
 .cardHead>button:focus {
@@ -199,6 +223,7 @@ main {
 
 .projectCard p {
   font-size: 12px;
+  color: white;
 }
 
 .projectCard img {
@@ -213,7 +238,7 @@ form {
 
 form input {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 255, 156);
   padding: 10px;
   margin-bottom: 10px;
   font-size: 15px;
@@ -221,7 +246,7 @@ form input {
 
 form textarea {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 255, 156);
   padding: 10px;
   margin-bottom: 10px;
   font-size: 15px;
@@ -229,7 +254,7 @@ form textarea {
 
 form button {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 255, 156);
   padding: 10px;
   margin-bottom: 10px;
   width: 50%;
@@ -270,7 +295,7 @@ form button:hover {
 .hide {
   top: 2%;
   transition: .4s ease;
-  opacity: .1;
+  opacity: 0;
 }
 
 .show {
@@ -343,4 +368,11 @@ form button:hover {
   #contact {
     width: 50%;
   }
+}
+
+.video {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  z-index: -2;
 }
