@@ -63,13 +63,12 @@ x = 0,
 y = 0
 const friction = 1 / 40;
 const bg = document.querySelector(".bg")
+console.log(bg.style)
 
 function moveBackground() {
   x += (lFollowX - x) * friction;
   y += (lFollowY - y) * friction;
-
   translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
-
   bg.style.transform = translate
 
   window.requestAnimationFrame(moveBackground);
